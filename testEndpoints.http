@@ -5,3 +5,8 @@ Eres un agente inmobiliario. Tienes que vender una casa. Ubicado en: 40.43790731
 
 ### Load data with vectores
 GET http://localhost:8080/init
+
+### Find using vectors
+GET http://localhost:8080/find
+
+Patrones
