@@ -33,6 +33,8 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-jdbc")
 	implementation("org.postgresql:postgresql")
 	implementation("com.pgvector:pgvector:0.1.6")
+
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.17.2")
 }
 
 kotlin {

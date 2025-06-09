@@ -4,9 +4,7 @@ GET http://localhost:8080/chat
 Eres un agente inmobiliario. Tienes que vender una casa. Ubicado en: 40.43790731147958, -3.6863095063190614. Precio: 900000 euroes. Tiene: cocina, 2 baños, 3 habitaciones, calefacción y terraza. Escribe un anuncio para un portal web inmobiliario que tenga entre 500 y 1000 caracteres.
 
 ### Load data with vectores
-GET http://localhost:8080/init
+POST http://localhost:8080/init
 
 ### Find using vectors
-GET http://localhost:8080/find
-
-Patrones
+GET http://localhost:8080/findSimilar?courseIds=3rr0,3j0r
