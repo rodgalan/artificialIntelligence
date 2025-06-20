@@ -10,7 +10,6 @@ import org.springframework.jdbc.core.namedparam.MapSqlParameterSource
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate
 import org.springframework.stereotype.Repository
 import java.sql.ResultSet
-import java.util.*
 
 @Repository
 class CourseRepository(private val jdbcTemplate: NamedParameterJdbcTemplate) {
@@ -60,11 +59,15 @@ class CourseRepository(private val jdbcTemplate: NamedParameterJdbcTemplate) {
        return  jdbcTemplate.query(sql, params, mapAd())
     }
 
-    //TODO: Crear una estructira de datos que contenga nombre, resumen y categorias para el embeding.
-    private fun embedingString(course: Course) = course.name
+    private fun embedingString(course: Course) = """
+      - name: ${course.name}
+        summary: ${course.summary}
+        categories: ${course.categories.joinToString(", ")}
+        published_at: ${course.published_at}
+    """.trimIndent()
 
     private fun embedingString(courses: List<Course>) =
-        courses.map { embedingString(it) }.joinToString("-")
+        courses.map { embedingString(it) }.joinToString("\n")
 
     fun findSimilar(courseIds: List<String>): List<Course> {
         val embeddingModel = OllamaEmbeddingModel.builder()
@@ -75,11 +78,14 @@ class CourseRepository(private val jdbcTemplate: NamedParameterJdbcTemplate) {
         val patternCourses =  find(courseIds)
 
         val sql = """
-            select id, name, summary, categories, published_at from courses order by embedding <-> :embedding limit 5
+            select id, name, summary, categories, published_at from courses where id not in (:ids) order by embedding <-> :embedding limit 5
         """.trimIndent()
 
         val params = MapSqlParameterSource(
-            mapOf("embedding" to PGvector(embeddingModel.embed(embedingString(patternCourses)).content().vectorAsList()))
+            mapOf(
+                "embedding" to PGvector(embeddingModel.embed(embedingString(patternCourses)).content().vectorAsList()),
+                "ids" to courseIds
+            )
         )
 
         return jdbcTemplate.query(sql, params, mapAd())

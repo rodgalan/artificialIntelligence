@@ -8,3 +8,6 @@ POST http://localhost:8080/init
 
 ### Find using vectors
 GET http://localhost:8080/findSimilar?courseIds=3rr0,3j0r
+
+### Find using vectors
+GET http://localhost:8080/findSimilar?courseIds=cl3c,t6oe
