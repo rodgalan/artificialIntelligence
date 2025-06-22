@@ -12,6 +12,6 @@ class ChatController {
         val modelName = "gemma";
         val ollamaServer = "http://localhost:11434";
         val model = OllamaChatModel.builder().baseUrl(ollamaServer).modelName(modelName).build()
-        return model.generate(request)
+        return model.chat(request)
     }
 }

@@ -1,0 +1,33 @@
+Stop trying to be Steve Jobs and start learning from the losers
+Copying success stories wonʼt make you successful.
+Remember the buzz around Spotifyʼs organizational model? Squads, tribes, chapters, and guilds. It sounded like the perfect blueprint for agile success.
+The model promised autonomous teams (squads) working within larger units (tribes), connected by shared expertise (chapters) and common interests (guilds). It was a fresh take on scaling agile practices, and many companies were eager to adopt it.
+We tried implementing it, but quickly realized it was too much structure for a team of 20. Just having good communication and cross-functional squads was enough. Adding more structure ended up creating redundant rituals and unproductive meetings.
+We werenʼt alone. ING adopted the model only to discover that layering Spotifyʼs model onto an existing hierarchy didnʼt make teams more autonomous, it just added confusion.
+Even Spotify has since moved away from the model. They acknowledged it was more of an aspirational snapshot than a scalable framework.
+Why smart teams copy dumb ideas
+Blindly copying practices from tech giants can do more harm than good. What works for a company like Spotify, with its unique culture and scale, might not work for you. Itʼs essential to critically assess whether these models fit our specific context before adopting them.
+Still, we keep falling for it. Google uses OKRs, so we think we need OKRs without fully understanding what theyʼre about. Netflix preaches radical candor, so we start handing out unfiltered “feedbackˮ and end up hurting everyoneʼs feelings. Apple does... whatever Apple does — and we try to reverse-engineer the magic.
+    Stop trying to be Steve Jobs and start learning from the losers 1
+
+When we hit a wall (missed deadlines, user churn, team friction) our first instinct is to look up, not around. “Letʼs just do what the big guys do.ˮ
+The logic is seductive: if it worked for them, itʼll work for us. But youʼre not Google. You donʼt have their money, their brand, their scale, or their infinite runway for mistakes. More importantly, you donʼt have their problems. Theyʼre playing a different game. Different rules, different stakes, different board.
+If you really want to learn something useful, stop listening to the winners. Talk to the ones who didnʼt make it.
+What the losers can teach you
+Youʼve heard of Airbnb and Dropbox, two of Y Combinatorʼs biggest success stories. But not the 95% of YC startups that quietly shut down. Youʼve seen the TED Talks. But not the burnout, not the pivots, not the pitch decks that never got a second meeting.
+This is survivorship bias. We spotlight the winners and forget the rest. Every unicorn buries a graveyard of startups that did everything “rightˮ and still died. Around 90% of startups fail. Less than 1% become unicorns. But those are the ones we hear about. The shiny outliers that made it through.
+Most startups follow the playbook. They raise money, build fast, talk to users, iterate. They do everything theyʼre supposed to do. And still, most donʼt make it. Not because they were lazy, but because the odds are brutal and the variables uncontrollable.
+We love the winners because theyʼre visible. But visibility isnʼt insight. And success doesnʼt prove a system works. It proves something worked once, under a very specific set of conditions.
+The truth is, you can learn more from a founder who just shut down their company than from a unicorn CEO giving a keynote. The failure stories are raw. Messy. Honest. They donʼt try to impress you. They just tell you what broke.
+Itʼs not that success stories are useless. Theyʼre just incomplete. The winners show you whatʼs possible. The losers show you whatʼs likely. And often, thatʼs more useful.
+   Stop trying to be Steve Jobs and start learning from the losers 2
+
+Success doesnʼt come with a template
+If a founder did X and made a billion dollars, we assume X is genius. If enough of them did X, we call it a best practice. But thatʼs not logic. Thatʼs astrology with better marketing.
+Just because successful companies do something doesnʼt mean it made them successful. It mightʼve helped. Or it mightʼve been noise. Correlation isnʼt causation. Itʼs a clue, nothing more.
+Success in tech is messy. Context-dependent. Often driven by timing, taste, and luck. For every Stripe, there are hundreds of talented teams who built great products and quietly disappeared.
+Iʼve learned more from failed founders than from TED Talks. Not because failure is noble, but because itʼs honest. It doesnʼt try to sell you anything. It just tells you what broke. Thatʼs where the real insight lives.
+Donʼt worship outliers. Think from first principles. Instead of asking, “What would Google do?ˮ, ask, “What do we need, right here, with what we have?ˮ
+Use tech giant practices as data points, not gospel. Treat them like prototypes: test, discard, adapt.
+You donʼt need to be the next Amazon, Netflix or Airbnb. You need to be the first you. And please, stop trying to be Steve Jobs.
+ Stop trying to be Steve Jobs and start learning from the losers 3

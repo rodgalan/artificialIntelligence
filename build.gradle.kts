@@ -26,13 +26,15 @@ dependencies {
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
-	implementation("dev.langchain4j:langchain4j-ollama:0.35.0")
-	implementation("dev.langchain4j:langchain4j:0.35.0")
+	implementation("dev.langchain4j:langchain4j-ollama:1.1.0-rc1")
+	implementation("dev.langchain4j:langchain4j:1.1.0")
+	implementation("dev.langchain4j:langchain4j-pgvector:1.1.0-beta7")
+	implementation("dev.langchain4j:langchain4j-document-parser-apache-pdfbox:1.1.0-beta7")
 
 	implementation("org.springframework:spring-jdbc")
 	implementation("org.springframework.boot:spring-boot-starter-jdbc")
 	implementation("org.postgresql:postgresql")
-	implementation("com.pgvector:pgvector:0.1.6")
+	implementation("com.pgvector:pgvector:0.1.6") //course
 
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.17.2")
 }
