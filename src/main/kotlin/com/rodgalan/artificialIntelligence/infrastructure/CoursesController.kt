@@ -36,4 +36,9 @@ class CoursesController(private val courseRepository: CourseRepository) {
         return ResponseEntity.ok(result.joinToString { it.name })
     }
 
+    @GetMapping("findSimilarAndRecent")
+    fun findSimilarAndRecent(@RequestParam courseIds: String): ResponseEntity<String>{
+        val result = courseRepository.findSimilarAndRecent(courseIds.split(",").map { it.trim() })
+        return ResponseEntity.ok(result.joinToString { it.name })
+    }
 }

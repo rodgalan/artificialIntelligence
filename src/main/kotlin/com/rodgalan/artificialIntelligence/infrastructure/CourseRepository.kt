@@ -91,6 +91,33 @@ class CourseRepository(private val jdbcTemplate: NamedParameterJdbcTemplate) {
         return jdbcTemplate.query(sql, params, mapAd())
     }
 
+    fun findSimilarAndRecent(courseIds: List<String>): List<Course> {
+        val embeddingModel = OllamaEmbeddingModel.builder()
+            .baseUrl("http://localhost:11434")
+            .modelName("nomic-embed-text")
+            .build()
+
+        val patternCourses =  find(courseIds)
+
+        val sql = """
+            select id, name, summary, categories, published_at 
+            from courses where id not in (:ids) 
+            order by 
+                (embedding <-> :embedding)
+                 + 0.001 * extract(epoch from now() - published_at)/86400
+            limit 5
+        """.trimIndent()
+
+        val params = MapSqlParameterSource(
+            mapOf(
+                "embedding" to PGvector(embeddingModel.embed(embedingString(patternCourses)).content().vectorAsList()),
+                "ids" to courseIds
+            )
+        )
+
+        return jdbcTemplate.query(sql, params, mapAd())
+    }
+
     private fun mapAd(): RowMapper<Course> {
         val mapper = jacksonObjectMapper()
         return RowMapper { rs: ResultSet, _: Int ->

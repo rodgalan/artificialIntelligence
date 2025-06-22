@@ -11,3 +11,6 @@ GET http://localhost:8080/findSimilar?courseIds=3rr0,3j0r
 
 ### Find using vectors
 GET http://localhost:8080/findSimilar?courseIds=cl3c,t6oe
+
+### Find using vectors and priorizing recent
+GET http://localhost:8080/findSimilarAndRecent?courseIds=cl3c,t6oe
