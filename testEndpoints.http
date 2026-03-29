@@ -17,3 +17,11 @@ GET http://localhost:8080/findSimilarAndRecent?courseIds=cl3c,t6oe
 
 ### Load data from documents
 POST http://localhost:8080/initDocs
+
+### Load data from documents with chunking by paragraph
+POST http://localhost:8080/initDocsChunkingByParagraph
+
+### Chat with a boot
+GET http://localhost:8080/chatWithRAG
+
+Why shouldn’t companies copy Spotify’s organizational model?

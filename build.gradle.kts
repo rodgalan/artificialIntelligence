@@ -30,6 +30,7 @@ dependencies {
 	implementation("dev.langchain4j:langchain4j:1.1.0")
 	implementation("dev.langchain4j:langchain4j-pgvector:1.1.0-beta7")
 	implementation("dev.langchain4j:langchain4j-document-parser-apache-pdfbox:1.1.0-beta7")
+	implementation("dev.langchain4j:langchain4j-easy-rag:1.1.0-beta7")
 
 	implementation("org.springframework:spring-jdbc")
 	implementation("org.springframework.boot:spring-boot-starter-jdbc")
